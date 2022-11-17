@@ -6983,8 +6983,7 @@ html.fp-enabled,
 }
 
 #map {
-  height: 100%;
-  /* The height is 400 pixels */
+  height: 500px;
   width: 100%;
-  /* The width is the width of the web page */
+  position: relative!important;
 }
