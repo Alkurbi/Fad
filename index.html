@@ -8,7 +8,23 @@
 <link rel="shortcut icon" href="assets/images/favicon.ico">
 <link rel="stylesheet" href="assets/css/master.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
-<script type="module" src="index.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcUDHnF1_r0ONmX1uj_XRwTCw1TxXWZw8&callback=initMap&v=weekly"  async defer></script>
+<script type="text/javascript">
+  function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 17.493145601173904, lng: 47.110055910150166 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 18,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+</script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 
@@ -676,7 +692,7 @@
 <!--=== Wrapper End ===-->
 
 <!--=== Javascript Plugins ===-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcUDHnF1_r0ONmX1uj_XRwTCw1TxXWZw8&callback=initMap&v=weekly" async></script>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/smoothscroll.js"></script>
 <script src="assets/js/plugins.js"></script>
