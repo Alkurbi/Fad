@@ -8,6 +8,7 @@
 <link rel="shortcut icon" href="assets/images/favicon.ico">
 <link rel="stylesheet" href="assets/css/master.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
+<script type="module" src="index.js"></script>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 
@@ -538,7 +539,9 @@
   
   <!--=== Google Maps Start ======-->
   <section class="map-section dark-bg pb-0 pt-0">
-    <div id="map-style-2" class="wide"></div>
+    <div id="map-style-2" class="wide">
+      <div id="map"></div>
+    </div>
   </section>
   <!--=== Google Maps End ======-->
   
@@ -673,11 +676,12 @@
 <!--=== Wrapper End ===-->
 
 <!--=== Javascript Plugins ===-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcUDHnF1_r0ONmX1uj_XRwTCw1TxXWZw8&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cABCDE"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcUDHnF1_r0ONmX1uj_XRwTCw1TxXWZw8&callback=initMap&v=weekly" async></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/smoothscroll.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/master.js"></script>
+
 <!--=== Javascript Plugins End ===-->
 
 </body>
